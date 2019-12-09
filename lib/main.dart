@@ -4,6 +4,7 @@ import 'package:flutter_demo/empty.dart';
 import 'home.dart';
 import 'detail.dart';
 import 'tab.dart';
+import 'my.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,12 +26,13 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: TabVC(),
+      home: My(),
       routes: {
         "home": (context) => MyHomePage(),
         "detail": (context) => Detail(),
         "empty": (context) => Empty(),
-        "tab": (context) => TabVC()
+        "tab": (context) => TabVC(),
+        "my": (context) => My(),
         // "/": (context) => MyHomePage(title: "router enter",),
       },
     );
