@@ -12,11 +12,15 @@ class _MyState extends State<My> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      // appBar: AppBar(
-      //   // Here we take the value from the MyHomePage object that was created by
-      //   // the App.build method, and use it to set our appbar title.
-      //   title: Text("widget.title"),
-      // ),
+      appBar: AppBar(
+        // Here we take the value from the MyHomePage object that was created by
+        // the App.build method, and use it to set our appbar title.
+        title: Text("widget.title"),
+        backgroundColor: Color.fromRGBO(250, 250, 250, 1),
+        brightness: Brightness.light,
+        elevation: 0,
+        textTheme: TextTheme(title: TextStyle(color: Colors.black, fontSize: 18)),
+      ),
       body:  ListView(
       shrinkWrap: true, 
       padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
